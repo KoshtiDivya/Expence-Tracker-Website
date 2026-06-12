@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Poppins;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+.container{
+    width: 98%;
+    background-color: #FAF9FD;
+    border-radius: 18px;
+    padding: 2rem;
+    margin: auto;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    height: fit-content;
+    background-image: url("https://i.pinimg.com/736x/c2/e0/df/c2e0dfcbfa50d985873c9753f4bc5a97.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #191255;
+    padding-bottom: 2rem;
+}
+.header i{
+    font-size: 3rem;
+    color: #6149BD;
+}
+.welcome{
+    width: 100%;
+    padding: 2rem 0;
+}
+.welcome p{
+    font-size: 1.3rem;
+}
+.cards{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.card{
+    width: 30%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.card i{
+    font-size: 2.5rem;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+.balance{
+    color: #6653EE;
+}
+.saving{
+    color: #239966;
+}
+.expence-total{
+    color: #FC6C3C;
+}
+.balance i{
+    background-color: #EEECFD;
+}
+.saving i{
+    background-color: #E3F3EC;
+}
+.expence-total i{
+    background-color: #FEE9E5;
+}
+.card-data{
+    height: 100%;
+    width: 100%;
+}
+.card-data h3{
+    color: #191255;
+    font-size: 1.5rem;
+    padding: 0.75rem 0;
+}
+
+
+.form-section, .transaction-section{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 18px;
+    background-color: #CFC7F3;
+}
+.add-expence{
+    background-color: #886FE0 !important;
+}
+.add-expence button{
+    background-color:#886FE0 ;
+    color: white;
+    font-weight: 600;
+}
+#form-expence{
+    margin-top: 2rem;
+    padding: 1rem 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.form-item{
+    width: 23%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 16px;
+}
+.form-item input, select, button{
+   width: 70%;
+   outline: none;
+   font-size: 25px;
+   padding: 20px 10px;
+   border: 0;
+}
+ul{
+    list-style:none;
+    margin-top:20px;
+    background-color: #edecf4;
+    border-radius: 18px;
+    padding: 10px;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom:10px;
+    border:1px solid rgb(216, 216, 216);
+}
+.income{
+    border-left:5px solid green;
+}
+.income #item-amount{
+    color:  green;
+}
+.expence{
+    border-left:5px solid red ;
+}
+.expence #item-amount{
+    color: red;
+}
+
+#item-amount, #item-desc{
+    width: 40%;
+}
+ li div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 0 20px;
+    }
+.delete-btn{
+    width: 15%;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.download-section{
+    width: 100%;
+    height: 20%;
+    background-color: #2C275F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 25px;
+}
+.download-section button{
+    background-color: #2C275F;
+    width: 15%;
+    cursor: pointer;
+}
+
+.download-section div{
+    width: 70%;
+}
+.download-section p{
+    font-size: 1.35rem;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .cards{
+        flex-direction: column;
+        height: fit-content ;
+    }
+    .card{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .form-item{
+        width: 100%;
+    }
+    .form-item input, select, button{
+        font-size: 18px;
+    }
+    #del{
+        display: none;
+    }
+    li{
+        font-size: 1rem;
+    }
+}
+@media only screen  and (min-width:769px) and (max-width: 1024px)  {
+    .container{
+        width: 100%;
+    }
+    .card{
+       font-size: 1rem;
+       padding: 1rem 0.5rem;
+       gap: 8px;
+    }
+    .card i{
+        font-size: 1.5rem;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+    .card-data h3{
+        font-size: 1rem;
+        padding: 0.5rem 0; 
+    }
+    .form-item input, select, button{
+        font-size: 18px;
+    }
+    .form-item{
+        width: 30%;
+    }
+    #del{
+        display: none;
+    }
+    li{
+        font-size: 1rem;
+    }
+}
+@media only screen  and (min-width:320px) and (max-width: 767px)  {
+    body{
+        padding: 10px;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 18px;
+    }
+    .header i{
+        font-size: 1.5rem;
+    }
+    .header h2, .welcome h1{
+        font-size: 1.2rem;
+    }
+    .header{
+        padding-bottom: 10px;
+    }
+    .welcome p{
+        font-size: 1rem;
+    }
+
+    .card{
+       font-size: 1rem;
+       width: 100%;
+       padding: 1rem;
+    }
+    .card i{
+        font-size: 1.75rem;
+    }
+   
+    .card-data h3{
+        font-size: 1rem;
+        padding: 0.5rem 0; 
+    }
+    .form-section, .transaction-section{
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
+    .form-item input, select, button{
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+    svg{
+        width: 25px;
+    }
+    .form-item{
+        width: 100%;
+    }
+    #form-expence{
+        margin-top: 1rem;
+    }
+    #del{
+        display: none;
+    }
+    li{
+        font-size: 0.75rem;
+        gap: 10px;
+    }
+    li div{
+        padding: 0;
+    }
+    .delete-btn{
+        width: 30%;
+        padding: 0;
+    }
+    .delete-btn svg{
+        width: 20px;
+    }
+    .download-section{
+        padding: 0.75rem;
+    }
+    .download-section h2{
+        font-size: 1rem;
+    }
+    .download-section p{
+        font-size: 0.75rem;
+        margin-top: 0px;
+
+    }
+}
+
+
